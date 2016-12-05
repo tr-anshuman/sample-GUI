@@ -103,7 +103,7 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_4">
         <item>
-         <widget class="QLabel" name="label_2">
+         <widget class="QLabel" name="uav0">
           <property name="frameShape">
            <enum>QFrame::Box</enum>
           </property>
@@ -113,7 +113,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="label_6">
+         <widget class="QLabel" name="uav0_stat">
           <property name="autoFillBackground">
            <bool>false</bool>
           </property>
@@ -121,14 +121,14 @@
            <enum>QFrame::Box</enum>
           </property>
           <property name="text">
-           <string>Busy       </string>
+           <string>Idle       </string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QProgressBar" name="progressBar_2">
+         <widget class="QProgressBar" name="uav0_time">
           <property name="value">
-           <number>12</number>
+           <number>0</number>
           </property>
          </widget>
         </item>
@@ -137,69 +137,7 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout_2">
         <item>
-         <widget class="QLabel" name="label_5">
-          <property name="frameShape">
-           <enum>QFrame::Box</enum>
-          </property>
-          <property name="text">
-           <string>UAV 3</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_8">
-          <property name="frameShape">
-           <enum>QFrame::Box</enum>
-          </property>
-          <property name="text">
-           <string>Busy       </string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QProgressBar" name="progressBar_4">
-          <property name="value">
-           <number>24</number>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout">
-        <item>
-         <widget class="QLabel" name="label_4">
-          <property name="frameShape">
-           <enum>QFrame::Box</enum>
-          </property>
-          <property name="text">
-           <string>UAV 4</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="label_9">
-          <property name="frameShape">
-           <enum>QFrame::Box</enum>
-          </property>
-          <property name="text">
-           <string>Busy       </string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QProgressBar" name="progressBar_5">
-          <property name="value">
-           <number>36</number>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_3">
-        <item>
-         <widget class="QLabel" name="label_3">
+         <widget class="QLabel" name="uav1">
           <property name="frameShape">
            <enum>QFrame::Box</enum>
           </property>
@@ -209,19 +147,81 @@
          </widget>
         </item>
         <item>
-         <widget class="QLabel" name="label_7">
+         <widget class="QLabel" name="uav1_stat">
           <property name="frameShape">
            <enum>QFrame::Box</enum>
           </property>
           <property name="text">
-           <string>Busy       </string>
+           <string>Idle       </string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QProgressBar" name="progressBar_3">
+         <widget class="QProgressBar" name="uav1_time">
           <property name="value">
-           <number>30</number>
+           <number>0</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="uav2">
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
+          <property name="text">
+           <string>UAV 3</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="uav2_stat">
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
+          <property name="text">
+           <string>Idle       </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QProgressBar" name="uav2_time">
+          <property name="value">
+           <number>0</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QLabel" name="uav3">
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
+          <property name="text">
+           <string>UAV 4</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="uav3_stat">
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
+          <property name="text">
+           <string>Idle       </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QProgressBar" name="uav3_time">
+          <property name="value">
+           <number>0</number>
           </property>
          </widget>
         </item>
@@ -293,7 +293,7 @@
       <rect>
        <x>190</x>
        <y>20</y>
-       <width>113</width>
+       <width>115</width>
        <height>161</height>
       </rect>
      </property>
@@ -332,26 +332,26 @@
      </property>
      <layout class="QVBoxLayout" name="verticalLayout_2">
       <item>
-       <widget class="QProgressBar" name="progressBar_6">
+       <widget class="QProgressBar" name="uav0_batt">
         <property name="value">
-         <number>99</number>
+         <number>100</number>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QProgressBar" name="progressBar_7">
+       <widget class="QProgressBar" name="uav0_dam">
         <property name="value">
          <number>0</number>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QProgressBar" name="progressBar_8">
+       <widget class="QProgressBar" name="uav0_time1">
         <property name="minimum">
          <number>0</number>
         </property>
         <property name="value">
-         <number>12</number>
+         <number>0</number>
         </property>
        </widget>
       </item>
@@ -447,7 +447,7 @@ UAV Color: Yellow
        <string>Retire</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton">
+     <widget class="QPushButton" name="uav1_deny">
       <property name="geometry">
        <rect>
         <x>120</x>
@@ -469,10 +469,10 @@ UAV Color: Yellow
     <widget class="QLabel" name="label_14">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>30</y>
-       <width>55</width>
-       <height>16</height>
+       <x>10</x>
+       <y>16</y>
+       <width>161</width>
+       <height>21</height>
       </rect>
      </property>
      <property name="font">
@@ -481,6 +481,9 @@ UAV Color: Yellow
        <bold>true</bold>
       </font>
      </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
      <property name="text">
       <string>UAV 2</string>
      </property>
@@ -488,11 +491,14 @@ UAV Color: Yellow
     <widget class="QLabel" name="uav2_pic">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>70</y>
-       <width>91</width>
-       <height>101</height>
+       <x>10</x>
+       <y>50</y>
+       <width>161</width>
+       <height>131</height>
       </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
      </property>
      <property name="text">
       <string>TextLabel</string>
@@ -501,10 +507,10 @@ UAV Color: Yellow
     <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
-       <x>210</x>
-       <y>23</y>
-       <width>113</width>
-       <height>121</height>
+       <x>190</x>
+       <y>20</y>
+       <width>121</width>
+       <height>161</height>
       </rect>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout_3">
@@ -534,64 +540,31 @@ UAV Color: Yellow
     <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
-       <x>330</x>
+       <x>320</x>
        <y>20</y>
-       <width>114</width>
-       <height>121</height>
+       <width>131</width>
+       <height>161</height>
       </rect>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout_4">
       <item>
-       <widget class="QProgressBar" name="progressBar_9">
+       <widget class="QProgressBar" name="uav1_batt">
         <property name="value">
-         <number>24</number>
+         <number>100</number>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QProgressBar" name="progressBar_11">
+       <widget class="QProgressBar" name="uav1_dam">
         <property name="value">
-         <number>24</number>
+         <number>0</number>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QProgressBar" name="progressBar_10">
+       <widget class="QProgressBar" name="uav1_time1">
         <property name="value">
-         <number>24</number>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </widget>
-    <widget class="QWidget" name="layoutWidget">
-     <property name="geometry">
-      <rect>
-       <x>150</x>
-       <y>200</y>
-       <width>295</width>
-       <height>30</height>
-      </rect>
-     </property>
-     <layout class="QHBoxLayout" name="horizontalLayout_7">
-      <item>
-       <widget class="QPushButton" name="uav2_engage">
-        <property name="text">
-         <string>Engage</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="uav2_confirm">
-        <property name="text">
-         <string>Confirm</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="uav2_retire">
-        <property name="text">
-         <string>Retire</string>
+         <number>0</number>
         </property>
        </widget>
       </item>
@@ -600,16 +573,118 @@ UAV Color: Yellow
     <widget class="QLabel" name="simstart_l">
      <property name="geometry">
       <rect>
-       <x>50</x>
+       <x>10</x>
+       <y>200</y>
+       <width>161</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="text">
+      <string>UAV Type : Alpha
+UAV Speed: High
+UAV Image Quality: Poor
+UAV Color: Magenta
+</string>
+     </property>
+    </widget>
+    <widget class="QFrame" name="frame_5">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>10</y>
+       <width>281</width>
+       <height>181</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="uav2_deny">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
        <y>260</y>
-       <width>55</width>
-       <height>16</height>
+       <width>93</width>
+       <height>28</height>
       </rect>
      </property>
      <property name="text">
-      <string>TextLabel</string>
+      <string>Deny</string>
      </property>
     </widget>
+    <widget class="QFrame" name="frame_6">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>200</y>
+       <width>281</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="uav2_engage">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>210</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Engage</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="uav2_confirm">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>260</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Confirm</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="uav2_retire">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>210</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Retire</string>
+     </property>
+    </widget>
+    <zorder>frame_6</zorder>
+    <zorder>uav2_engage</zorder>
+    <zorder>uav2_confirm</zorder>
+    <zorder>uav2_retire</zorder>
+    <zorder>label_14</zorder>
+    <zorder>uav2_pic</zorder>
+    <zorder>layoutWidget</zorder>
+    <zorder>layoutWidget</zorder>
+    <zorder>simstart_l</zorder>
+    <zorder>frame_5</zorder>
+    <zorder>uav2_deny</zorder>
    </widget>
    <widget class="QWidget" name="tab_4">
     <attribute name="title">
@@ -618,10 +693,10 @@ UAV Color: Yellow
     <widget class="QLabel" name="label_20">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>40</y>
-       <width>55</width>
-       <height>16</height>
+       <x>10</x>
+       <y>16</y>
+       <width>161</width>
+       <height>21</height>
       </rect>
      </property>
      <property name="font">
@@ -630,6 +705,9 @@ UAV Color: Yellow
        <bold>true</bold>
       </font>
      </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
      <property name="text">
       <string>UAV 3</string>
      </property>
@@ -637,11 +715,14 @@ UAV Color: Yellow
     <widget class="QLabel" name="uav3_pic">
      <property name="geometry">
       <rect>
-       <x>30</x>
-       <y>80</y>
-       <width>111</width>
-       <height>101</height>
+       <x>10</x>
+       <y>50</y>
+       <width>161</width>
+       <height>131</height>
       </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
      </property>
      <property name="text">
       <string>TextLabel</string>
@@ -650,10 +731,10 @@ UAV Color: Yellow
     <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
-       <x>210</x>
+       <x>192</x>
        <y>23</y>
-       <width>113</width>
-       <height>121</height>
+       <width>121</width>
+       <height>161</height>
       </rect>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout_5">
@@ -683,69 +764,151 @@ UAV Color: Yellow
     <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
-       <x>330</x>
+       <x>320</x>
        <y>20</y>
-       <width>114</width>
-       <height>121</height>
+       <width>131</width>
+       <height>161</height>
       </rect>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout_6">
       <item>
-       <widget class="QProgressBar" name="progressBar_13">
+       <widget class="QProgressBar" name="uav2_batt">
         <property name="value">
-         <number>24</number>
+         <number>100</number>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QProgressBar" name="progressBar_12">
+       <widget class="QProgressBar" name="uav2_dam">
         <property name="value">
-         <number>24</number>
+         <number>0</number>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QProgressBar" name="progressBar_14">
+       <widget class="QProgressBar" name="uav2_time1">
         <property name="value">
-         <number>24</number>
+         <number>0</number>
         </property>
        </widget>
       </item>
      </layout>
     </widget>
-    <widget class="QWidget" name="layoutWidget">
+    <widget class="QFrame" name="frame_7">
      <property name="geometry">
       <rect>
-       <x>160</x>
-       <y>170</y>
-       <width>295</width>
-       <height>30</height>
+       <x>180</x>
+       <y>10</y>
+       <width>281</width>
+       <height>181</height>
       </rect>
      </property>
-     <layout class="QHBoxLayout" name="horizontalLayout_6">
-      <item>
-       <widget class="QPushButton" name="uav3_engage">
-        <property name="text">
-         <string>Engage</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="uav3_confirm">
-        <property name="text">
-         <string>Confirm</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="uav3_retire">
-        <property name="text">
-         <string>Retire</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
     </widget>
+    <widget class="QPushButton" name="uav3_deny">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>260</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Deny</string>
+     </property>
+    </widget>
+    <widget class="QFrame" name="frame_8">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>200</y>
+       <width>281</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="simstart_l_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>200</y>
+       <width>161</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="text">
+      <string>UAV Type : Alpha
+UAV Speed: High
+UAV Image Quality: Poor
+UAV Color: Cyan
+</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="uav3_engage">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>220</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Engage</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="uav3_confirm">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>260</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Confirm</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="uav3_retire">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>220</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Retire</string>
+     </property>
+    </widget>
+    <zorder>frame_8</zorder>
+    <zorder>label_20</zorder>
+    <zorder>uav3_pic</zorder>
+    <zorder>layoutWidget</zorder>
+    <zorder>layoutWidget</zorder>
+    <zorder>frame_7</zorder>
+    <zorder>uav3_deny</zorder>
+    <zorder>simstart_l_2</zorder>
+    <zorder>uav3_engage</zorder>
+    <zorder>uav3_confirm</zorder>
+    <zorder>uav3_retire</zorder>
    </widget>
    <widget class="QWidget" name="tab_5">
     <attribute name="title">
@@ -754,10 +917,10 @@ UAV Color: Yellow
     <widget class="QLabel" name="label_24">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>30</y>
-       <width>55</width>
-       <height>16</height>
+       <x>10</x>
+       <y>16</y>
+       <width>161</width>
+       <height>21</height>
       </rect>
      </property>
      <property name="font">
@@ -766,6 +929,9 @@ UAV Color: Yellow
        <bold>true</bold>
       </font>
      </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
      <property name="text">
       <string>UAV 4</string>
      </property>
@@ -773,11 +939,14 @@ UAV Color: Yellow
     <widget class="QLabel" name="uav4_pic">
      <property name="geometry">
       <rect>
-       <x>40</x>
-       <y>70</y>
-       <width>111</width>
-       <height>101</height>
+       <x>10</x>
+       <y>50</y>
+       <width>161</width>
+       <height>131</height>
       </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
      </property>
      <property name="text">
       <string>TextLabel</string>
@@ -786,10 +955,10 @@ UAV Color: Yellow
     <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
-       <x>210</x>
+       <x>192</x>
        <y>23</y>
-       <width>113</width>
-       <height>111</height>
+       <width>121</width>
+       <height>161</height>
       </rect>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout_7">
@@ -819,74 +988,150 @@ UAV Color: Yellow
     <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
       <rect>
-       <x>330</x>
+       <x>323</x>
        <y>20</y>
-       <width>114</width>
-       <height>111</height>
+       <width>121</width>
+       <height>161</height>
       </rect>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout_8">
       <item>
-       <widget class="QProgressBar" name="progressBar_16">
+       <widget class="QProgressBar" name="uav3_batt">
         <property name="value">
-         <number>24</number>
+         <number>100</number>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QProgressBar" name="progressBar_15">
+       <widget class="QProgressBar" name="uav3_dam">
         <property name="value">
-         <number>24</number>
+         <number>0</number>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QProgressBar" name="progressBar_17">
+       <widget class="QProgressBar" name="uav3_time1">
         <property name="value">
-         <number>24</number>
+         <number>0</number>
         </property>
        </widget>
       </item>
      </layout>
     </widget>
-    <widget class="QWidget" name="layoutWidget">
+    <widget class="QLabel" name="simstart_l_3">
      <property name="geometry">
       <rect>
-       <x>160</x>
-       <y>190</y>
-       <width>295</width>
-       <height>30</height>
+       <x>10</x>
+       <y>200</y>
+       <width>161</width>
+       <height>91</height>
       </rect>
      </property>
-     <layout class="QHBoxLayout" name="horizontalLayout_5">
-      <item>
-       <widget class="QPushButton" name="uav4_engage">
-        <property name="text">
-         <string>Engage</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="uav4_confirm">
-        <property name="text">
-         <string>Confirm</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="uav4_retire">
-        <property name="text">
-         <string>Retire</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="text">
+      <string>UAV Type : Alpha
+UAV Speed: High
+UAV Image Quality: Poor
+UAV Color: Blue
+</string>
+     </property>
     </widget>
-    <zorder>layoutWidget</zorder>
+    <widget class="QFrame" name="frame_9">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>10</y>
+       <width>281</width>
+       <height>181</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+    </widget>
+    <widget class="QFrame" name="frame_10">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>200</y>
+       <width>281</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <widget class="QPushButton" name="uav4_deny">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>50</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Deny</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="uav4_confirm">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>250</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Confirm</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="uav4_engage">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>210</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Engage</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="uav4_retire">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>210</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Retire</string>
+     </property>
+    </widget>
+    <zorder>frame_10</zorder>
+    <zorder>uav4_confirm</zorder>
+    <zorder>uav4_engage</zorder>
+    <zorder>uav4_retire</zorder>
     <zorder>layoutWidget</zorder>
     <zorder>layoutWidget</zorder>
     <zorder>label_24</zorder>
     <zorder>uav4_pic</zorder>
+    <zorder>simstart_l_3</zorder>
+    <zorder>frame_9</zorder>
    </widget>
   </widget>
   <widget class="QWidget" name="layoutWidget">
@@ -907,14 +1152,14 @@ UAV Color: Yellow
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="pushButton_3">
+     <widget class="QPushButton" name="pushButton_simstop">
       <property name="text">
        <string>Stop</string>
       </property>
      </widget>
     </item>
     <item>
-     <widget class="QPushButton" name="pushButton_2">
+     <widget class="QPushButton" name="pushButton_simpause">
       <property name="text">
        <string>Pause</string>
       </property>
@@ -951,7 +1196,23 @@ UAV Color: Yellow
     </rect>
    </property>
    <property name="value">
-    <number>2</number>
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame_4">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>730</y>
+     <width>120</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
    </property>
   </widget>
  </widget>

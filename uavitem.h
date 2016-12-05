@@ -13,8 +13,8 @@ public:
     QRectF boundingRect() const;
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget);
 public slots:
-    void move();
-    void target(int, int x[][4]);
+//    void move();
+//    void target(int, int x[][4]);
 //    void on_pushButton_simstart_clicked();
 protected:
 //    void advance(int phase);

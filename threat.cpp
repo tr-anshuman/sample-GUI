@@ -15,26 +15,26 @@ Threat::Threat(int a)
 
     if( a<4)
     {
-        StartX = (qrand() % 500);
-        StartY = (qrand() % 320);
+        StartX = (qrand() % 400)-10;
+        StartY = (qrand() % 300);
 
     }
-    else if( a<7)
+    else if( a<8)
     {
-        StartX = 500 + (qrand() % 500);
-        StartY = (qrand() % 320);
+        StartX = 500 + (qrand() % 400);
+        StartY = (qrand() % 300)-10;
 
     }
-    else if( a<10)
+    else if( a<12)
     {
-        StartX = (qrand() % 500);
-        StartY = 320 + (qrand() % 320);
+        StartX = (qrand() % 400);
+        StartY = 320 + (qrand() % 300);
 
     }
     else
     {
-        StartX = 500 + (qrand() % 500);
-        StartY = 320 + (qrand() % 320);
+        StartX = 500 + (qrand() % 400);
+        StartY = 320 + (qrand() % 300);
 
     }
 
